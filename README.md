@@ -15,11 +15,6 @@ Cloner le dépôt :
 git clone git@github.com:gglacroix/sc_widget.git
 cd sc_widget.git
 
-Installer les dépendances nécessaires :
-
-sudo apt update
-sudo apt install -y python3 chromium ffmpeg xvfb
-
 Depuis le répertoire du dépôt, build l'image docker :
 sudo docker build -t soundcloud-widget .
 
