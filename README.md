@@ -16,10 +16,10 @@ git clone git@github.com:gglacroix/sc_widget.git
 cd sc_widget.git
 
 Depuis le répertoire du dépôt, build l'image docker :
-sudo docker build -t soundcloud-widget .
+docker build -t soundcloud-widget .
 
 Lorsque l'image est construite, lancer une capture avec la commande suivante :
-sudo docker run --rm \
+docker run --rm \
 -v "$PWD/output:/exports" soundcloud-widget \
 --track-url "https://soundcloud.com/bcco/bcco-mix-619-yasmin-gardezi" \
 --duration 30 \
